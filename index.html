@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>QURAN.ARABIC ACADEMY — سجل الحصص</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--nv:#124e46;--nv2:#0d3a34;--gd:#fadc82;--bg:#fff;--cd:#fff;--tx:#16302c;--mu:#5f7a74;--ln:#1a24400f;--ln2:#1a244024;--gr:#16a34a;--rd:#dc2626;--sf:#f4f6fa;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b2420;--cd:#12332d;--tx:#eef6f3;--mu:#9db8b0;--ln:#ffffff14;--ln2:#ffffff26;--sf:#0f2a25}}
+:root[data-theme=dark]{--bg:#0b2420;--cd:#12332d;--tx:#eef6f3;--mu:#9db8b0;--ln:#ffffff14;--ln2:#ffffff26;--sf:#0f2a25}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:600 14px/1.6 Cairo,system-ui,sans-serif}
+button,select,input{font:inherit;color:inherit}
+.hd{display:flex;align-items:center;gap:8px;padding:10px 16px;background:var(--cd);border-bottom:1px solid var(--ln2);position:sticky;top:env(safe-area-inset-top,0px);z-index:5;flex-wrap:wrap}
+.lg{width:42px;height:42px;border-radius:14px;background:var(--nv);display:grid;place-items:center;font-size:20px;flex:none}
+.tt{font-weight:800;font-size:18px;line-height:1.2}.tg{font-size:10px;background:var(--sf);border:1px solid var(--ln2);border-radius:8px;padding:0 6px;margin-inline-start:6px;font-weight:600}
+.sm{font-size:12px;color:var(--mu)}.ct{flex:1;text-align:center;color:var(--mu);font-size:12px}
+.ch{border:1px solid var(--ln2);background:var(--sf);border-radius:12px;padding:5px 12px;font-size:12px;font-weight:800;cursor:pointer;min-height:38px}
+.ch.g{color:var(--gr);background:#16a34a14;border-color:#16a34a40}.ch.r{color:var(--rd);background:#dc262612;border-color:#dc262640}
+.dot{display:inline-block;width:8px;height:8px;border-radius:9px;background:var(--gr);margin-inline-end:5px}
+.wrap{display:flex;min-height:calc(100vh - 66px)}
+aside{width:250px;flex:none;padding:16px 12px;border-inline-start:1px solid var(--ln2);background:var(--cd);display:flex;flex-direction:column;gap:4px}
+aside button{display:flex;gap:10px;align-items:center;border:0;background:none;border-radius:14px;padding:12px 14px;font-weight:800;color:var(--mu);cursor:pointer;text-align:start;min-height:46px}
+aside button.on{background:var(--nv);color:#fff}
+.ft{margin-top:auto;font-size:11px;color:var(--mu);padding:10px}
+main{flex:1;min-width:0;padding:22px;max-width:1000px;margin:0 auto;width:100%}
+h1{font-size:22px;font-weight:800;margin:0 0 4px}h2{font-size:17px;font-weight:800;margin:0 0 8px}
+.cd{background:var(--cd);border:1px solid var(--ln2);border-radius:20px;padding:16px;margin-bottom:14px}
+.hero{background:var(--nv);color:#fff;border-radius:24px;padding:22px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.hero small{color:var(--gd)}.hero h1{font-size:26px;margin:2px 0}.hero p{margin:0;color:#ffffffb8;font-size:13px}
+.bt{border:0;border-radius:14px;min-height:46px;padding:0 18px;font-weight:800;cursor:pointer;background:var(--nv);color:#fff}
+.bt.gd{background:var(--gd);color:var(--nv)}.bt.gh{background:#ffffff1a;color:#fff}.bt.sf{background:var(--sf);color:var(--tx);border:1px solid var(--ln2)}.bt.rd{background:var(--rd)}.bt.sm2{min-height:38px;padding:0 12px}
+.gr4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.st{background:var(--cd);border:1px solid var(--ln2);border-radius:20px;padding:16px}.st.nv{background:var(--nv);color:#fff;border:0}
+.st b{display:block;font-size:30px;font-weight:800;line-height:1.3}.st span{font-size:13px;color:var(--mu)}.st.nv span{color:#ffffffb3}
+.lk{color:var(--nv);font-size:12px;font-weight:800;border:0;background:none;padding:0;cursor:pointer}
+.row{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:12px 4px;border-top:1px solid var(--ln)}
+.row:first-of-type{border-top:0}
+.sc{overflow-x:auto;border:1px solid var(--ln2);border-radius:16px}
+table{width:100%;border-collapse:collapse;font-size:13px}th{background:var(--sf);text-align:start;color:var(--mu);font-size:12px}
+th,td{padding:12px 10px;border-top:1px solid var(--ln);white-space:nowrap}th{border-top:0}
+.pl{border-radius:99px;padding:2px 10px;font-size:12px;font-weight:800}.pl.p{background:#16a34a1f;color:var(--gr)}.pl.a{background:#dc26261f;color:var(--rd)}
+.fl{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.fl label,.fm label{display:block;font-size:12px;color:var(--mu)}
+input,select{width:100%;min-height:44px;border-radius:12px;border:1px solid var(--ln2);background:var(--sf);padding:6px 12px;margin-top:3px}
+.tb{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}.tb .bt{flex:none}
+.wn{background:#f59e0b1a;border:1px solid #f59e0b55;color:#b45309;border-radius:14px;padding:10px 14px;margin-bottom:14px;font-size:13px}
+.ok{background:#16a34a1f;color:var(--gr);border-radius:14px;padding:10px 14px;margin-bottom:12px;font-weight:800}
+.er{background:#dc26261f;color:var(--rd);border-radius:14px;padding:10px 14px;margin-bottom:12px;font-weight:800}
+.ov{position:fixed;inset:0;background:#0009;z-index:30;display:grid;place-items:end center}
+.md{background:var(--cd);width:100%;max-width:440px;border-radius:24px 24px 0 0;padding:18px;max-height:90vh;overflow:auto;padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}
+@media(min-width:700px){.ov{place-items:center}.md{border-radius:24px}}
+.fm{display:grid;gap:10px;margin:10px 0}
+.bn{display:none}
+.lgn{min-height:100vh;display:grid;place-items:center;background:var(--nv);padding:16px}.lgn .cd{max-width:380px;width:100%;margin:0}
+.ban{background:var(--gd);color:var(--nv);text-align:center;font-size:12px;font-weight:800;padding:3px}
+@media(max-width:820px){aside{display:none}main{padding:14px 12px 90px}.gr4{grid-template-columns:1fr 1fr}.fl{grid-template-columns:1fr 1fr}.ct{display:none}
+.bn{display:flex;position:fixed;inset-inline:0;bottom:0;background:var(--cd);border-top:1px solid var(--ln2);z-index:6;padding-bottom:env(safe-area-inset-bottom,0px)}
+.bn button{flex:1;border:0;background:none;font-size:11px;font-weight:800;color:var(--mu);padding:8px 2px;min-height:58px;cursor:pointer}.bn button.on{color:var(--nv)}
+:root[data-theme=dark] .bn button.on{color:var(--gd)}.hero h1{font-size:20px}}
+:root[data-theme=dark] .lk{color:var(--gd)}@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .lk{color:var(--gd)}}img.lg{object-fit:cover}.er[hidden]{display:none}</style></head><body><div id="app"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script src="supabaseClient.js"></script>
+<script>
+const LOGO="logo.png";
+const $=h=>document.getElementById("app").innerHTML=h,f2=(n,d=2)=>Number(n).toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d});
+const DUR=[[15,"ربع ساعة"],[20,"ثلث ساعة"],[30,"نصف ساعة"],[40,"ثلثا ساعة"],[45,"45 دقيقة"],[60,"ساعة"],[75,"ساعة وربع"],[90,"ساعة ونصف"],[105,"ساعتان إلا ربع"],[120,"ساعتان"],[135,"ساعتان وربع"],[150,"ساعتان ونصف"],[165,"ثلاث ساعات إلا ربع"],[180,"ثلاث ساعات"],[195,"ثلاث ساعات وربع"],[210,"ثلاث ساعات ونصف"],[225,"ثلاث ساعات وثلاثة أرباع"],[240,"أربع ساعات"]];
+const dl=m=>(DUR.find(d=>d[0]==m)||[0,m+" د"])[1]+" ("+m+" دقيقة)";
+const day=d=>new Date(d+"T12:00:00").toLocaleDateString("ar-EG",{weekday:"long"});
+let TS=[],FM=[],ST=[],L=[],AD=[],CUR=0,T={name:"—",rate:0,un:""},ME=null;
+const tn=id=>TS.find(x=>x.id==id)||{name:"—",rate:0,un:"",id};
+let S={u:null,lk:"admin",p:"",dk:0,tab:"act",q:"",fs:"",fst:"",ex:{},fx:52.65,md:null,msg:"",err:"",f:{s:"",d:"2026-10-14",m:60,st:"p"},more:0};
+const fnm=f=>f?(FM.find(x=>x.id==f)||{n:"—"}).n:"بدون أسرة",tOf=sid=>(ST.find(s=>s.id==sid)||{t:0}).t,mineL=()=>act().filter(l=>tOf(l.s)==CUR),stl=()=>ST.filter(s=>s.active!==false&&(S.u=="admin"||s.t==CUR)),sn0=0,sn=id=>(ST.find(s=>s.id==id)||{n:"—"}).n,act=()=>L.filter(l=>!l.del),wage=l=>l.st=="p"?l.m/60*l.r:0,rev=l=>l.st=="p"?l.m/60*l.p:0;
+const hrs=a=>a.filter(l=>l.st=="p").reduce((x,l)=>x+l.m,0)/60;
+const NAV={admin:[["ov","نظرة عامة","▦"],["les","سجل الحصص","📖"],["fam","الأسر والطلاب","👥"],["tea","المعلمون والأجور","🎓"],["adm","المشرفون","🛡"],["stu","سجل الطلاب الشامل","🧑‍🎓"],["fin","الملخص المالي","$"]],teacher:[["add","+ حصة","＋"],["mine","حصصي","📖"],["stu2","طلابي","👥"]]};
+function login(){$(`<div class="lgn"><div class="cd"><div style="text-align:center"><img class="lg" alt="" style="width:88px;height:88px;display:block;margin:0 auto 8px" src="${LOGO}"><h1>سجل الحصص</h1><div class="sm">QURAN.ARABIC ACADEMY</div></div>
+<div class="tb" style="margin-top:14px"><button class="bt ${S.lk=="teacher"?"":"sf"}" style="flex:1" onclick="S.lk='teacher';S.err='';login()">دخول المعلم</button><button class="bt ${S.lk=="admin"?"":"sf"}" style="flex:1" onclick="S.lk='admin';S.err='';login()">دخول المشرف</button></div>
+<div class="fm"><label>اسم المستخدم<input id="u" dir="ltr" value=""></label><label>كلمة المرور<input id="pw" dir="ltr" type="password"></label></div>
+${S.err?`<div class="er">${S.err}</div>`:""}<button id="lgbtn" class="bt" style="width:100%" onclick="tryLogin()">دخول</button>
+</div></div>`)}
+function shell(b){const r=S.u,it=NAV[r],pr=r=="admin"?it.slice(0,4):it;
+ return `<div class="hd"><img class="lg" alt="" src="${LOGO}"><div><div class="tt">سجل الحصص <span class="tg">QURAN.ARABIC ACADEMY</span></div><div class="sm">مسجّل كـ: ${ME.name} — ${r=="admin"?"مشرف":"معلم"}</div></div>
+ <div class="ct">${new Date().toLocaleDateString("ar-EG",{weekday:"long",day:"numeric",month:"long",year:"numeric"})}</div><span style="flex:1" class="ct"></span>
+ <span class="ch g"><i class="dot"></i>سحابي مشترك</span><button class="ch" onclick="S.dk=!S.dk;document.documentElement.dataset.theme=S.dk?'dark':'light'">🌙</button><button class="ch r" onclick="out()">خروج ⎋</button></div>
+ <div class="wrap"><aside>${it.map(n=>`<button class="${S.p==n[0]?"on":""}" onclick="nav('${n[0]}')"><span>${n[2]}</span>${n[1]}</button>`).join("")}<div class="ft"><b>QURAN.ARABIC ACADEMY</b><br>سجل الحصص والحسابات</div></aside><main>${b}</main></div>
+ <div class="bn">${pr.map(n=>`<button class="${S.p==n[0]?"on":""}" onclick="nav('${n[0]}')">${n[2]}<br>${n[1].replace(" والأجور","").replace(" الشامل","").replace(" (الأجور)","")}</button>`).join("")}${r=="admin"?`<button onclick="S.more=1;R()">⋯<br>المزيد</button>`:""}</div>
+ ${S.more?`<div class="ov" onclick="S.more=0;R()"><div class="md" onclick="event.stopPropagation()"><h2>المزيد</h2><div class="fm">${it.slice(4).map(n=>`<button class="bt sf" onclick="nav('${n[0]}')">${n[2]} ${n[1]}</button>`).join("")}</div></div></div>`:""}${S.md?mod():""}`}
+function mod(){const m=S.md;let h="";
+ if(m.t=="add")h=`<h2>${S.u=="admin"?"تسجيل حصة نيابةً عن معلم":"تسجيل حصة"}</h2>${form()}<button class="bt" style="width:100%" onclick="saveL()">حفظ الحصة</button>`;
+ if(m.t=="rate")h=`<h2>تعديل أجر الساعة ($)</h2><div class="fm"><label>الأجر الجديد<input id="rt" dir="ltr" value="${T.rate}"></label><div class="sm">يسري على الحصص الجديدة فقط؛ الحصص السابقة تحتفظ بأجرها.</div></div><button class="bt" style="width:100%" onclick="T.rate=+document.getElementById('rt').value||T.rate;S.md=null;R()">حفظ</button>`;
+ if(m.t=="fx")h=`<h2>تعديل سعر الصرف</h2><div class="fm"><label>1 دولار = ... جنيه<input id="fxv" dir="ltr" value="${S.fx}"></label></div><button class="bt" style="width:100%" onclick="saveFx()">حفظ</button>`;
+ if(m.t=="adm")h=`<h2>إضافة مشرف جديد</h2><div class="fm"><label>الاسم<input id="an"></label><label>اسم المستخدم<input id="au" dir="ltr"></label><label>كلمة المرور<input id="ap" dir="ltr" type="password"></label></div><button class="bt" style="width:100%" onclick="addAd()">إضافة</button>`;
+ h+=mod2(m);return `<div class="ov" onclick="S.md=null;R()"><div class="md" onclick="event.stopPropagation()"><div id="merr" class="er" ${S.err?"":"hidden"}>${S.err||""}</div>${h}<button class="bt sf" style="width:100%;margin-top:8px" onclick="S.md=null;S.err='';R()">إلغاء</button></div></div>`}
+function form(){const f=S.f;return `<div class="fm"><label>الطالب<select onchange="S.f.s=this.value"><option value="">— اختر الطالب —</option>${stl().map(s=>`<option value="${s.id}" ${f.s==s.id?"selected":""}>${s.n}</option>`).join("")}</select></label>
+<label>التاريخ<input type="date" value="${f.d}" onchange="S.f.d=this.value"></label><label>المدة<select onchange="S.f.m=+this.value">${DUR.map(d=>`<option value="${d[0]}" ${f.m==d[0]?"selected":""}>${d[1]}</option>`).join("")}</select></label>
+<div class="tb"><button class="bt ${f.st=="p"?"":"sf"}" style="flex:1" onclick="S.f.st='p';R()">حضر</button><button class="bt ${f.st=="a"?"rd":"sf"}" style="flex:1" onclick="S.f.st='a';R()">غاب</button></div></div>`}
+const fld=(id,l,v,x="")=>`<label>${l}<input id="${id}" ${x} value="${v??""}"></label>`,g=id=>document.getElementById(id).value.trim(),done=m=>{S.md=null;S.err="";S.msg=m;R()},bad=m=>{S.err=m;const e=document.getElementById("merr");if(e){e.textContent=m;e.hidden=false}else R()},
+ sel=(id,l,o,v)=>`<label>${l}<select id="${id}">${o.map(x=>`<option value="${x[0]}" ${x[0]==v?"selected":""}>${x[1]}</option>`).join("")}</select></label>`,
+ B=(c,f,t)=>`<button class="bt ${c}" style="width:100%;margin-top:6px" onclick="${f}">${t}</button>`;
+function mod2(m){const t=m.t[0]=="t"||m.t=="pw"?(m.id?tn(m.id):null):null,st=m.t=="se"||m.t=="sd"?ST.find(z=>z.id==m.id):null,fa=m.t=="fe"||m.t=="fd"?FM.find(z=>z.id==m.id):null;
+ if(m.t=="ld"){const l=L.find(x=>x.id==m.id);return `<h2>تأكيد حذف الحصة</h2><p>حذف حصة <b>${sn(l.s)}</b> بتاريخ ${l.d}؟ تنتقل إلى «المحذوفة» ويمكن استرجاعها.</p>${B("rd","delL("+l.id+")","تأكيد الحذف")}`}
+ if(m.t=="te")return `<h2>${t?"تعديل المعلم":"إضافة معلم"}</h2><div class="fm">${fld("tn","الاسم",t?t.name:"")}${fld("tu","اسم المستخدم (إنجليزي صغير)",t?t.un:"",'dir="ltr" autocapitalize="none"')}${t?"":fld("tp","كلمة المرور (8 أحرف فأكثر)","",'dir="ltr" type="password"')}${fld("tr","أجر الساعة ($)",t?t.rate:3.25,'dir="ltr"')}<div class="sm">تغيير الأجر يسري على الحصص الجديدة فقط.</div></div>${B("","saveT("+(m.id||0)+")","حفظ")}`;
+ if(m.t=="pw")return `<h2>إعادة تعيين كلمة مرور ${t.name}</h2><div class="fm">${fld("pp","كلمة المرور الجديدة","",'dir="ltr"')}</div>${B("","savePw("+t.id+")","حفظ")}`;
+ if(m.t=="tsw")return `<h2>${t.active?"إيقاف":"تفعيل"} ${t.name}</h2><p>${t.active?"سيُمنع من الدخول فوراً وتبقى بياناته.":"سيتمكن من الدخول من جديد."}</p>${B("","swT("+t.id+")","تأكيد")}`;
+ if(m.t=="tdel"){const has=ST.some(z=>z.t==t.id)||FM.some(z=>z.t==t.id)||L.some(l=>tOf(l.s)==t.id);return `<h2>حذف ${t.name}</h2>${has?`<p>لهذا المعلم طلاب أو أسر أو حصص، فالحذف النهائي غير متاح. الأرشفة تخفيه وتمنع دخوله وتُبقي كل حصصه وتقاريره.</p>${B("sf","delT("+t.id+",'stop')","تأكيد الإيقاف فقط")}${B("rd","delT("+t.id+",'arch')","تأكيد الأرشفة مع الاحتفاظ بالسجلات")}`:`<p>لا توجد بيانات مرتبطة. سيُحذف نهائياً.</p>${B("rd","delT("+t.id+",'del')","تأكيد الحذف النهائي")}`}`}
+ const to=TS.filter(x=>!x.arch).map(x=>[x.id,x.name]);
+ if(m.t=="fe")return `<h2>${fa?"تعديل الأسرة":"إضافة أسرة"}</h2><div class="fm">${fld("fn","اسم الأسرة",fa?fa.n:"")}${sel("ft","المعلم",to,fa?fa.t:to[0][0])}${fa?'<div class="sm">تغيير المعلم ينقل طلاب الأسرة معه، وتبقى حصصهم السابقة كما هي.</div>':""}</div>${B("","saveF("+(m.id||0)+")","حفظ")}`;
+ if(m.t=="fd")return `<h2>حذف ${fa.n}</h2><p>في الأسرة ${ST.filter(z=>z.f==fa.id).length} طالب.</p>${B("sf","delF("+fa.id+",'only')","تأكيد حذف الأسرة فقط (يصير طلابها بدون أسرة)")}${B("rd","delF("+fa.id+",'all')","تأكيد حذف الأسرة وطلابها وحصصهم نهائياً")}`;
+ if(m.t=="se")return `<h2>${st?"تعديل / نقل الطالب":"إضافة طالب"}</h2><div class="fm">${fld("sn","اسم الطالب",st?st.n:"")}${sel("st","المعلم",to,st?st.t:to[0][0])}${sel("sf","الأسرة",[[0,"بدون أسرة"]].concat(FM.map(x=>[x.id,x.n+" ("+tn(x.t).name+")"])),st?st.f:0)}${fld("sp","سعر ساعة الطالب ($) — للمشرف فقط",st?st.p:8,'dir="ltr"')}<div class="sm">تغيير السعر يسري على الحصص الجديدة فقط.</div></div>${B("","saveS("+(m.id||0)+")","حفظ")}`;
+ if(m.t=="sd")return `<h2>حذف ${st.n}</h2><p>للطالب ${L.filter(l=>l.s==st.id).length} حصة في هذا الشهر (وقد توجد حصص في شهور أخرى).</p>${B("sf","delS("+st.id+",'stop')","تأكيد إيقاف الطالب (تبقى كل حصصه)")}${B("rd","delS("+st.id+",'all')","تأكيد حذف الطالب وكل حصصه نهائياً")}`;
+ return ""}
+const stat=(l,v,k,a,nv)=>`<div class="st ${nv?"nv":""}"><span>${l}</span><b>${v}</b>${k?`<button class="lk" onclick="nav('${a}')">↗ ${k}</button>`:""}</div>`;
+function ov(){const a=act();return `<div class="hero"><div><small>لوحة الإشراف والمتابعة</small><h1>ملخص شهر ${mname()}</h1><p>متابعة دقيقة لحصص المعلمين والطلاب وتوثيق أجور الساعات الحقيقية.</p></div><div class="tb" style="margin:0"><button class="bt gd" onclick="S.md={t:'add'};R()">تسجيل حصة ⊕</button><button class="bt gh" onclick="nav('fin')">$ أجور المعلمين</button></div></div>
+<div class="gr4">${stat("المعلمون النشطون",TS.filter(t=>t.active&&!t.arch).length,"إدارة المعلمين والأجور","tea")}${stat("الطلاب النشطون",ST.filter(z=>z.active!==false).length,"إدارة الأسر والطلاب","fam")}${stat("حصص هذا الشهر",a.length,"عرض كل الحصص","les")}${stat("ساعات الحضور للشهر",f2(hrs(a),0)+" ساعة","تفاصيل المستحقات المالية","fin")}</div>
+<div class="cd"><div style="display:flex;justify-content:space-between;align-items:center"><div><h2 style="display:inline">الخلاصة الحية (آخر الحصص المسجلة)</h2> <span class="pl p">Realtime مباشر</span><div class="sm">تُحدَّث فوراً عند قيام أي معلم بتسجيل حصته مع تنبيه بالحالات الجديدة.</div></div><button class="lk" onclick="nav('les')">عرض الكل ↖</button></div>
+${a.slice(-5).reverse().map(l=>`<div class="row"><div><i class="dot" style="background:${l.st=="p"?"var(--gr)":"var(--rd)"}"></i><b>${sn(l.s)}</b> ${l.nw?'<span class="pl p">جديد</span>':""}<div class="sm">المعلم: ${tn(tOf(l.s)).name} · ${day(l.d)} ${l.d} · ${dl(l.m)} (${l.st=="p"?"حضر — أجر المعلم: $"+f2(wage(l)):"غاب"})</div></div><div class="sm">أجر الساعة: $${f2(l.r)}/س</div></div>`).join("")}</div>`}
+function les(){let a=L.filter(l=>S.tab=="act"?!l.del:l.del).filter(l=>(!S.fs||l.s==S.fs)&&(!S.fst||l.st==S.fst)&&(!S.q||sn(l.s).includes(S.q))).reverse();
+ return `<div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px"><div><h1>📖 سجل الحصص الإلكتروني</h1><div class="sm">متابعة دقيقة وتصفية مرنة مع احتساب أجور ساعات المعلمين تلقائياً للحضور.</div></div><div class="tb" style="margin:0"><button class="bt ${S.tab=="act"?"":"sf"}" onclick="S.tab='act';R()">الحصص المسجلة</button><button class="bt ${S.tab=="del"?"":"sf"}" onclick="S.tab='del';R()">المحذوفة</button><button class="bt" onclick="S.md={t:'add'};R()">+ تسجيل حصة نيابة عن معلم</button></div></div>
+${S.msg?`<div class="ok">${S.msg}</div>`:""}<div class="cd fl"><label>الشهر<input type="month" value="${S.month}" onchange="setMonth(this.value)"></label><label>المعلم<select><option>جميع المعلمين</option>${TS.filter(x=>!x.arch).map(x=>`<option>${x.name}</option>`).join("")}</select></label>
+<label>الطالب<select onchange="S.fs=this.value;R()"><option value="">جميع الطلاب</option>${ST.map(s=>`<option value="${s.id}" ${S.fs==s.id?"selected":""}>${s.n}</option>`).join("")}</select></label><label>الحالة<select onchange="S.fst=this.value;R()"><option value="">الكل (حضور وغياب)</option><option value="p" ${S.fst=="p"?"selected":""}>حضر</option><option value="a" ${S.fst=="a"?"selected":""}>غاب</option></select></label></div>
+<div class="sm" style="margin-bottom:6px">إجمالي الحصص المعروضة: ${a.length}</div>${a.length?`<div class="sc"><table><tr><th>الطالب</th><th>المعلم</th><th>الأسرة</th><th>التاريخ واليوم</th><th>المدة</th><th>الحالة</th><th>إيراد الطالب</th><th>أجر المعلم عن الحصة</th><th>الملاحظة</th><th>الإجراءات</th></tr>
+${a.map(l=>`<tr><td><b>${sn(l.s)}</b></td><td>${tn(tOf(l.s)).name}</td><td>${fnm((ST.find(z=>z.id==l.s)||{}).f)}</td><td>${day(l.d)}<div class="sm">${l.d}</div></td><td>${dl(l.m)}</td><td><span class="pl ${l.st}">● ${l.st=="p"?"حضر":"غاب"}</span></td><td>$${f2(rev(l))} <span class="sm">($${f2(l.p)}/س)</span></td><td>$${f2(wage(l))} <span class="sm">($${f2(l.r)}/س)</span></td><td>${l.note||"—"}</td><td>${S.tab=="act"?`<button class="bt sf sm2" style="color:var(--rd)" onclick="S.md={t:'ld',id:${l.id}};R()">🗑 حذف</button>`:`<button class="bt sm2" onclick="restL(${l.id})">استرجاع</button>`}</td></tr>`).join("")}</table></div>`:`<div class="cd" style="text-align:center">لا توجد حصص</div>`}`}
+function fam(){const sr=s=>`<div class="row"><div><b>${s.n}</b> ${s.active===false?'<span class="pl a">موقوف</span>':""}<div class="sm">${tn(s.t).name} · سعر ساعته $${f2(s.p)} · ${L.filter(l=>l.s==s.id&&!l.del).length} حصة</div></div><div class="tb" style="margin:0"><button class="bt sf sm2" onclick="S.md={t:'se',id:${s.id}};R()">✏️</button><button class="bt sf sm2" style="color:var(--rd)" onclick="S.md={t:'sd',id:${s.id}};R()">🗑</button></div></div>`;
+ return `<div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:12px"><div><h1>👥 الأسر والطلاب</h1><div class="sm">أضف وعدّل واحذف الأسر والطلاب بلا حد لعدد الطلاب.</div></div><div class="tb" style="margin:0"><button class="bt" onclick="S.md={t:'fe'};R()">+ أسرة</button><button class="bt gd" onclick="S.md={t:'se'};R()">+ طالب</button></div></div>${S.msg?`<div class="ok">${S.msg}</div>`:""}
+${FM.map(f=>`<div class="cd"><div style="display:flex;justify-content:space-between;align-items:center"><div><b style="font-size:17px">${f.n}</b><div class="sm">المعلم: ${tn(f.t).name} · ${ST.filter(s=>s.f==f.id).length} طالب</div></div><div class="tb" style="margin:0"><button class="bt sf sm2" onclick="S.md={t:'fe',id:${f.id}};R()">✏️</button><button class="bt sf sm2" style="color:var(--rd)" onclick="S.md={t:'fd',id:${f.id}};R()">🗑</button></div></div>${ST.filter(s=>s.f==f.id).map(sr).join("")||'<div class="sm">لا يوجد طلاب</div>'}</div>`).join("")}
+<h2>طلاب بدون أسرة (${ST.filter(s=>!s.f).length})</h2><div class="cd">${ST.filter(s=>!s.f).map(sr).join("")||'<div class="sm">لا يوجد</div>'}</div>`}
+function tea(){const a=act();return `<div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:12px"><div><h1>🎓 المعلمون والأجور</h1><div class="sm">أنشئ حساب كل معلم، وعدّل اسم المستخدم وكلمة المرور والأجر.</div></div><button class="bt" onclick="S.md={t:'te'};R()">+ إضافة معلم</button></div>${S.msg?`<div class="ok">${S.msg}</div>`:""}
+<div class="gr4" style="grid-template-columns:repeat(auto-fill,minmax(270px,1fr))">${TS.filter(t=>!t.arch).map(t=>{const x=a.filter(l=>tOf(l.s)==t.id);return `<div class="cd"><div style="display:flex;justify-content:space-between"><div><b style="font-size:18px">${t.name}</b><div class="sm" dir="ltr" style="text-align:right">@${t.un}</div></div><span class="pl ${t.active?"p":"a"}">${t.active?"نشط":"موقوف"}</span></div>
+<div class="cd" style="background:var(--sf);margin:10px 0">أجر الساعة: <b>$${f2(t.rate)}</b></div><div style="display:grid;grid-template-columns:repeat(3,1fr);text-align:center"><div><b>${ST.filter(s=>s.t==t.id&&s.active!==false).length}</b><div class="sm">الطلاب</div></div><div><b>${x.length}</b><div class="sm">حصص الشهر</div></div><div><b>${f2(hrs(x),0)}</b><div class="sm">ساعات</div></div></div>
+<div class="tb" style="margin:10px 0 0"><button class="bt sf sm2" onclick="S.md={t:'te',id:${t.id}};R()">✏️ تعديل</button><button class="bt sf sm2" onclick="S.md={t:'pw',id:${t.id}};R()">🔑 كلمة المرور</button><button class="bt sf sm2" onclick="S.md={t:'tsw',id:${t.id}};R()">${t.active?"⏸ إيقاف":"▶ تفعيل"}</button><button class="bt sf sm2" style="color:var(--rd)" onclick="S.md={t:'tdel',id:${t.id}};R()">🗑 حذف</button></div></div>`}).join("")}</div>`}
+function adm(){const one=AD.length<2;return `<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:12px"><div><h1>🛡 إدارة المشرفين وصلاحيات النظام</h1><div class="sm">إضافة وتعديل وإزالة المشرفين مع حماية تامة تمنع تفريغ النظام من المشرفين.</div></div><button class="bt" onclick="S.md={t:'adm'};R()">+ إضافة مشرف جديد</button></div>
+${one?`<div class="wn">أنت المشرف الوحيد حالياً في النظام. تم تعطيل زر الإزالة تلقائياً لحماية النظام من الإغلاق.</div>`:""}<div class="gr4" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">${AD.map((a,i)=>`<div class="cd"><b>${a.n}</b> ${a.me?'<span class="pl p">حسابك الحالي</span>':""}<div class="sm" dir="ltr" style="text-align:right">@${a.un}</div><div class="row"><span class="sm">تاريخ التسجيل: ${a.dt}</span><button class="bt sf sm2" ${one?"disabled style='opacity:.4'":""} onclick="rmAd(${i},this)">🗑 إزالة</button></div></div>`).join("")}</div>`}
+function stu(){const a=act();return `<h1>🧑‍🎓 سجل الطلاب الشامل</h1><div class="sm" style="margin-bottom:12px">عرض إحصائيات حضور وغياب كل طالب، ونسبة الحضور، وتكلفة أجور المعلم المستحقة عنه.</div>
+<div class="cd fl"><label>المعلم<select><option>جميع المعلمين</option></select></label><label>الأسرة<select><option>جميع الأسر</option></select></label><label>الحالة<select><option>الكل</option></select></label><label>بحث بالاسم<input placeholder="اسم الطالب..." oninput="S.q=this.value;R()" value="${S.q}"></label></div>
+<div class="sc"><table><tr><th>اسم الطالب</th><th>المعلم</th><th>الأسرة</th><th>الحصص</th><th>حضور</th><th>غياب</th><th>ساعات الحضور</th><th>نسبة الحضور</th><th>سعر ساعته</th><th>إيراد الطالب</th><th>أجر المعلم</th><th>التفاصيل</th></tr>
+${ST.filter(s=>s.n.includes(S.q)).map(s=>{const x=a.filter(l=>l.s==s.id),p=x.filter(l=>l.st=="p");return `<tr><td><b>${s.n}</b></td><td>${tn(s.t).name}</td><td>${fnm(s.f)}</td><td>${x.length}</td><td style="color:var(--gr)">${p.length}</td><td style="color:var(--rd)">${x.length-p.length}</td><td>${f2(hrs(x),0)} ساعة</td><td style="color:var(--gr)">${x.length?Math.round(p.length/x.length*100):0}%</td><td>$${f2(s.p)}/س</td><td>$${f2(x.reduce((q,l)=>q+rev(l),0))}</td><td>$${f2(x.reduce((q,l)=>q+wage(l),0))}</td><td><button class="lk" onclick="S.fs=${s.id};nav('les')">👁 عرض الحصص</button></td></tr>`}).join("")}</table></div>`}
+function fin(){if(S.u!="admin")return"";const a=act(),pr=a.filter(l=>l.st=="p"),u=a.reduce((q,l)=>q+wage(l),0),rv=a.reduce((q,l)=>q+rev(l),0),nt=rv-u;
+ return `<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:12px"><div><h1>$ الملخص المالي</h1><div class="sm">إيراد الطلاب وأجور المعلمين بالدولار، والمقابل بالجنيه لمستحقات المعلمين. هذه الصفحة للمشرف فقط.</div></div><button class="bt sf" onclick="print()">🖨 طباعة التقرير</button></div>
+<div class="cd" style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:space-between"><div class="wn" style="margin:0">سعر الصرف الحالي: 1 دولار = <b>${S.fx} ج.م</b> <button class="lk" onclick="S.md={t:'fx'};R()">تعديل السعر</button></div><label style="min-width:180px">الشهر المالي<input type="month" value="${S.month}" onchange="setMonth(this.value)"></label></div>
+<div class="gr4">${stat("إيراد الطلاب","$"+f2(rv),"",0,1)}${stat("مستحقات المعلمين","$"+f2(u),"",0,1)}${stat("صافي الربح بعد مستحقات المعلمين","$"+f2(nt)+" ≈ "+f2(nt*S.fx)+" ج.م")}${stat("مستحقات المعلمين بالجنيه",f2(u*S.fx)+" ج.م")}</div>
+<div class="sm" style="margin-bottom:12px">صافي الربح = إيراد الطلاب − مستحقات المعلمين فقط، قبل أي مصروفات أخرى. الجنيه محسوب بسعر الصرف الحالي لا بسعر وقت الاعتماد.</div>
+<h2>الطلاب</h2><div class="sc" style="margin-bottom:14px"><table><tr><th>الطالب</th><th>سعر ساعته</th><th>ساعات الحضور</th><th>إيراد الطالب $</th><th>أجر المعلم $</th><th>صافي الربح $</th></tr>
+${ST.map(s=>{const x=a.filter(l=>l.s==s.id),r=x.reduce((q,l)=>q+rev(l),0),w=x.reduce((q,l)=>q+wage(l),0);return `<tr><td><b>${s.n}</b></td><td>$${f2(s.p)}/س</td><td>${f2(hrs(x),0)} ساعة</td><td>$${f2(r)}</td><td>$${f2(w)}</td><td><b>$${f2(r-w)}</b></td></tr>`}).join("")}
+<tr style="background:var(--sf);font-weight:800"><td>الإجمالي</td><td>—</td><td>${f2(hrs(a),0)} ساعة</td><td>$${f2(rv)}</td><td>$${f2(u)}</td><td>$${f2(nt)}</td></tr></table></div>
+<h2>المعلمون</h2><div class="sc"><table><tr><th>المعلم</th><th>أجر الساعة</th><th>الحصص</th><th>حضور</th><th>غياب</th><th>ساعات الحضور</th><th>المستحقات $</th><th>المستحقات ج.م</th></tr>
+${TS.filter(t=>a.some(l=>tOf(l.s)==t.id)).map(t=>{const x=a.filter(l=>tOf(l.s)==t.id),p=x.filter(l=>l.st=="p"),w=x.reduce((q,l)=>q+wage(l),0);return `<tr><td><b>${t.name}</b></td><td>$${f2(t.rate)}/س</td><td>${x.length}</td><td style="color:var(--gr)">${p.length}</td><td style="color:var(--rd)">${x.length-p.length}</td><td>${f2(hrs(x),0)} ساعة</td><td>$${f2(w)}</td><td><b>${f2(w*S.fx)} ج.م</b></td></tr>`}).join("")}</table></div>`}
+function add(){return `<h1>تسجيل حصة</h1>${S.msg?`<div class="ok">${S.msg}</div>`:""}${S.err?`<div class="er">${S.err}</div>`:""}<div class="cd">${form()}<button class="bt" style="width:100%" onclick="saveL()">حفظ الحصة</button></div><h2>آخر 5 حصص</h2>${rows(mineL().slice(-5).reverse())}`}
+const rows=a=>a.map(l=>`<div class="cd row" style="margin-bottom:8px"><div><b>${sn(l.s)}</b> <span class="pl ${l.st}">${l.st=="p"?"حضر":"غاب"}</span><div class="sm">${day(l.d)} ${l.d} · ${dl(l.m)}</div></div><b>$${f2(wage(l))}</b></div>`).join("");
+function mine(){const a=mineL(),u=a.reduce((q,l)=>q+wage(l),0);return `<h1>حصصي</h1><div class="gr4" style="grid-template-columns:repeat(2,1fr)">${stat("أجر الساعة","$"+f2(T.rate))}${stat("عدد الحصص",a.length)}${stat("ساعات الحضور",f2(hrs(a),0)+" ساعة")}${stat("مستحقاتي ($)","$"+f2(u),"",0,1)}${stat("مستحقاتي (ج.م)",f2(u*S.fx),"",0,1)}</div>${rows(a.slice().reverse())}`}
+function stu2(){return `<h1>طلابي</h1>${stl().map(s=>`<div class="cd"><b>${s.n}</b><div class="sm">${fnm(s.f)}</div></div>`).join("")}`}
+
+const sb=window.APP.supabase;
+const ID={m:new Map(),r:new Map(),n:1};
+const iid=u=>{if(u==null)return 0;if(!ID.m.has(u)){ID.m.set(u,ID.n);ID.r.set(ID.n,u);ID.n++}return ID.m.get(u)},uid=i=>ID.r.get(+i),one=x=>Array.isArray(x)?x[0]:x;
+const todayC=()=>new Intl.DateTimeFormat("en-CA",{timeZone:"Africa/Cairo"}).format(new Date());
+const mname=()=>new Date(S.month+"-01T12:00:00Z").toLocaleDateString("ar-EG",{month:"long",year:"numeric",timeZone:"UTC"});
+const nextM=m=>new Date(Date.UTC(+m.slice(0,4),+m.slice(5,7),1)).toISOString().slice(0,10);
+function ea(e){const t=((e&&e.message)||"")+" "+((e&&e.details)||""),c=(e&&e.code)||"",l=t.toLowerCase();
+ const M={LAST_ADMIN:"لا يمكن إزالة المشرف الوحيد",HAS_LESSONS:"لهذا الطالب حصص مسجّلة. اختر الإيقاف أو حذفه مع حصصه",HAS_DATA:"لهذا المعلم بيانات (طلاب أو أسر أو حصص). استخدم الإيقاف أو الأرشفة",USERNAME_TAKEN:"اسم المستخدم مستخدم بالفعل",WEAK_PASSWORD:"كلمة المرور يجب ألا تقل عن 8 أحرف",INVALID_USERNAME:"اسم المستخدم 3-30 حرفاً: إنجليزي صغير وأرقام و _ و - فقط",INVALID:"بيانات غير صالحة",NOT_FOUND:"العنصر غير موجود",FORBIDDEN:"لا تملك صلاحية تنفيذ هذه العملية",STUDENT_NOT_FOUND:"الطالب غير موجود"};
+ for(const k in M)if(t.includes(k))return M[k];
+ if(c=="23505"||l.includes("duplicate key"))return l.includes("students_uq")?"يوجد طالب بنفس الاسم في هذه الأسرة عند هذا المعلم":l.includes("families_uq")?"توجد أسرة بنفس الاسم عند هذا المعلم":"هذا العنصر موجود بالفعل";
+ if(c=="23503")return "لا يمكن التنفيذ لأن العنصر مرتبط ببيانات أخرى";
+ if(c=="23514")return "قيمة غير مسموحة (تحقق من الاسم والسعر والمدة)";
+ if(c=="42501"||l.includes("row-level security")||l.includes("permission denied"))return "لا تملك صلاحية تنفيذ هذه العملية";
+ if(c=="42P01"||l.includes("schema cache")||l.includes("could not find the function"))return "قاعدة البيانات غير مكتملة. شغّل ملف 1-قاعدة-البيانات.sql في Supabase";
+ if(l.includes("failed to fetch")||l.includes("network"))return "لا يوجد اتصال بالإنترنت أو الخادم، أعد المحاولة";
+ if(l.includes("jwt")||l.includes("expired"))return "انتهت جلستك، سجّل الدخول من جديد";
+ return "تعذّرت العملية: "+((e&&e.message)||"سبب غير معروف")}
+async function all(q){const o=[];for(let f=0;;f+=1000){const r=await q().range(f,f+999);if(r.error)throw r.error;o.push(...r.data);if(r.data.length<1000)break}return o}
+async function loadMe(u){const p=await sb.from("profiles").select("role,display_name,active,deleted_at").eq("id",u.id).maybeSingle();
+ if(p.error)return{error:"تعذّر قراءة بيانات حسابك، أعد المحاولة"};
+ if(!p.data||!p.data.active||p.data.deleted_at)return{error:"هذا الحساب موقوف أو محذوف. تواصل مع الإدارة"};
+ if(p.data.role=="teacher"){const t=await sb.from("teachers").select("id,name,active,deleted_at").eq("auth_user_id",u.id).maybeSingle();
+  if(!t.data||!t.data.active||t.data.deleted_at)return{error:"حساب المعلم موقوف. تواصل مع الإدارة"};
+  return{id:u.id,role:"teacher",name:t.data.name,teacherId:t.data.id}}
+ return{id:u.id,role:"admin",name:p.data.display_name||"مشرف"}}
+async function loadAll(){const ad=ME.role=="admin",LC="id,student_id,lesson_date,status,duration_minutes,note,teacher_rate_usd,created_at";
+ const [te,fa,st,le,fx]=await Promise.all([
+  all(()=>sb.from("teachers").select("id,name,username,hourly_rate_usd,active,deleted_at").order("name").order("id")),
+  all(()=>sb.from("families").select("id,name,teacher_id").order("name").order("id")),
+  all(()=>sb.from("students").select(ad?"id,name,teacher_id,family_id,active,student_pricing(rate_usd)":"id,name,teacher_id,family_id,active").order("name").order("id")),
+  all(()=>sb.from("lessons").select(ad?LC+",deleted_at,seen_by_admin_at,lesson_pricing(student_rate_usd)":LC).gte("lesson_date",S.month+"-01").lt("lesson_date",nextM(S.month)).order("lesson_date",{ascending:false}).order("created_at",{ascending:false}).order("id")),
+  sb.rpc("get_exchange_rate")]);
+ TS=te.map(t=>({id:iid(t.id),name:t.name,un:t.username,rate:+t.hourly_rate_usd,active:t.active,arch:t.deleted_at?1:0}));
+ FM=fa.map(f=>({id:iid(f.id),n:f.name,t:iid(f.teacher_id)}));
+ ST=st.map(s=>({id:iid(s.id),n:s.name,t:iid(s.teacher_id),f:s.family_id?iid(s.family_id):0,p:+((one(s.student_pricing)||{}).rate_usd||0),active:s.active}));
+ L=le.map(l=>({id:iid(l.id),s:iid(l.student_id),m:l.duration_minutes,st:l.status=="present"?"p":"a",d:l.lesson_date,note:l.note||"",r:+l.teacher_rate_usd||0,p:+((one(l.lesson_pricing)||{}).student_rate_usd||0),del:l.deleted_at?1:0,nw:!l.seen_by_admin_at}));
+ if(fx.data)S.fx=+fx.data;
+ if(ad){const a=await sb.rpc("admin_list_admins");if(a.error)throw a.error;AD=(a.data||[]).map(x=>({id:iid(x.id),n:x.display_name||"مشرف",un:String(x.email).split("@")[0],me:x.id==ME.id,dt:(x.created_at||"").slice(0,10)}))}
+ else{CUR=iid(ME.teacherId);T=tn(CUR)}}
+async function tryLogin(){const u=document.getElementById("u").value.trim().toLowerCase(),p=document.getElementById("pw").value;
+ if(!u||!p){S.err="اكتب اسم المستخدم وكلمة المرور";return login()}
+ if(u.includes("@")){S.err="اكتب اسم المستخدم فقط بدون @";return login()}
+ const b=document.getElementById("lgbtn");if(b){b.disabled=true;b.textContent="جارٍ الدخول..."}
+ try{const r=await sb.auth.signInWithPassword({email:u+"@"+(S.lk=="admin"?"admin.":"")+"quran.arabic.academy",password:p});
+  if(r.error){const m=(r.error.message||"").toLowerCase();S.err=m.includes("banned")?"هذا الحساب موقوف. تواصل مع الإدارة":m.includes("invalid")?"اسم المستخدم أو كلمة المرور غير صحيحة (وتأكد أنك اخترت «دخول المعلم» أو «دخول المشرف» الصحيح)":m.includes("fetch")||m.includes("network")?"لا يوجد اتصال بالخادم، أعد المحاولة":"تعذّر الدخول: "+r.error.message;return login()}
+  const me=await loadMe(r.data.user);
+  if(me.error){await sb.auth.signOut();S.err=me.error;return login()}
+  if(me.role!=S.lk){await sb.auth.signOut();S.err=me.role=="admin"?"هذا حساب مشرف. اختر «دخول المشرف»":"هذا حساب معلم. اختر «دخول المعلم»";return login()}
+  ME=me;await go(me.role)}catch(e){S.err=ea(e);login()}}
+async function go(r){S.u=r;S.p=NAV[r][0][0];S.err="";S.msg="";S.more=0;S.md=null;$('<div class="lgn"><div class="cd" style="text-align:center">جارٍ التحميل...</div></div>');
+ try{await loadAll()}catch(e){await sb.auth.signOut();S.u=null;S.err=ea(e);return login()}R()}
+async function nav(p){S.p=p;S.more=0;S.msg="";S.err="";S.md=null;try{await loadAll()}catch(e){S.err=ea(e)}R();scrollTo(0,0);
+ if(S.u=="admin"&&p=="les"){const ids=L.filter(l=>l.nw&&!l.del).map(l=>uid(l.id));if(ids.length)sb.rpc("admin_mark_lessons_seen",{p_ids:ids})}}
+async function out(){try{await sb.auth.signOut()}catch(e){}ME=null;S.u=null;location.replace(location.pathname)}
+async function setMonth(v){if(!v)return;S.month=v;try{await loadAll()}catch(e){S.err=ea(e)}R()}
+async function run(fn,ok){try{const r=await fn();if(r&&r.error)throw r.error;await loadAll();done(ok)}catch(e){bad(ea(e))}}
+async function saveL(){const f=S.f;S.err="";if(!f.s){S.err="اختر الطالب أولاً";return R()}
+ const s=ST.find(z=>z.id==f.s),old=f.s;if(!f.d){S.err="اختر التاريخ";return R()}
+ await run(()=>sb.from("lessons").insert({student_id:uid(f.s),teacher_id:uid(s.t),lesson_date:f.d,duration_minutes:f.m,status:f.st=="p"?"present":"absent"}),"تم حفظ الحصة ✓");
+ if(S.err){S.f.s=old;R()}else{S.f.s="";if(S.u=="admin"){S.p="les";R()}}}
+const delL=id=>run(()=>sb.from("lessons").update({deleted_at:new Date().toISOString()}).eq("id",uid(id)),"تم حذف الحصة ✓ — يمكن استرجاعها من تبويب المحذوفة");
+const restL=id=>run(()=>sb.from("lessons").update({deleted_at:null}).eq("id",uid(id)),"تم استرجاع الحصة ✓");
+function saveT(id){const n=g("tn"),u=g("tu").toLowerCase(),r=g("tr");S.err="";
+ if(!n)return bad("اسم المعلم مطلوب");if(!/^[a-z0-9_-]{3,30}$/.test(u))return bad("اسم المستخدم 3-30 حرفاً: إنجليزي صغير وأرقام و _ و - فقط");
+ if(r===""||!(+r>=0))return bad("الأجر يجب أن يكون رقماً صفراً أو أكثر");
+ if(id)return run(()=>sb.rpc("admin_update_teacher",{p_id:uid(id),p_name:n,p_username:u,p_rate:+r}),"تم حفظ المعلم ✓ — اسم المستخدم الجديد يعمل فوراً");
+ const p=document.getElementById("tp").value;if(p.length<8)return bad("كلمة المرور يجب ألا تقل عن 8 أحرف");
+ return run(()=>sb.rpc("admin_create_teacher",{p_name:n,p_username:u,p_password:p,p_rate:+r}),"تمت إضافة المعلم ✓ — يمكنه الدخول الآن")}
+function savePw(id){const p=document.getElementById("pp").value;if(p.length<8)return bad("كلمة المرور يجب ألا تقل عن 8 أحرف");
+ return run(()=>sb.rpc("admin_set_teacher_password",{p_teacher:uid(id),p_password:p}),"تم تغيير كلمة المرور ✓ — القديمة لم تعد تعمل")}
+function swT(id){const t=tn(id);return run(()=>sb.rpc("admin_set_teacher_active",{p_id:uid(id),p_active:!t.active}),t.active?"تم إيقاف المعلم ✓":"تم تفعيل المعلم ✓")}
+function delT(id,m){return run(()=>sb.rpc("admin_delete_teacher",{p_id:uid(id),p_mode:m}),m=="del"?"تم حذف المعلم ✓":m=="arch"?"تمت الأرشفة مع الاحتفاظ بالسجلات ✓":"تم إيقاف المعلم ✓")}
+function saveF(id){const n=g("fn"),t=+g("ft");S.err="";if(!n)return bad("اسم الأسرة مطلوب");
+ if(FM.some(f=>f.t==t&&f.id!=id&&f.n.toLowerCase()==n.toLowerCase()))return bad("توجد أسرة بنفس الاسم عند هذا المعلم");
+ if(!id)return run(()=>sb.from("families").insert({name:n,teacher_id:uid(t)}),"تم حفظ الأسرة ✓");
+ const f=FM.find(x=>x.id==id);
+ return run(async()=>{let r=await sb.from("families").update({name:n}).eq("id",uid(id));if(r.error)return r;return f.t!=t?sb.rpc("admin_move_family",{p_id:uid(id),p_teacher:uid(t)}):r},"تم حفظ الأسرة ✓")}
+const delF=(id,m)=>run(()=>sb.rpc("admin_delete_family",{p_id:uid(id),p_with_students:m=="all"}),"تم حذف الأسرة ✓");
+function saveS(id){const n=g("sn"),t=+g("st"),f=+g("sf"),p=g("sp");S.err="";if(!n)return bad("اسم الطالب مطلوب");
+ if(p===""||!(+p>=0))return bad("سعر الساعة يجب أن يكون رقماً صفراً أو أكثر");
+ if(f&&FM.find(x=>x.id==f).t!=t)return bad("الأسرة المختارة لا تتبع هذا المعلم");
+ if(ST.some(z=>z.id!=id&&z.t==t&&z.f==f&&z.n.toLowerCase()==n.toLowerCase()))return bad("يوجد طالب بنفس الاسم في هذه الأسرة عند هذا المعلم");
+ return run(async()=>{const row={name:n,teacher_id:uid(t),family_id:f?uid(f):null};let sid=id&&uid(id);
+  if(id){const r=await sb.from("students").update(row).eq("id",sid);if(r.error)return r}
+  else{const r=await sb.from("students").insert(row).select("id").single();if(r.error)return r;sid=r.data.id}
+  return sb.from("student_pricing").upsert({student_id:sid,rate_usd:+p,updated_at:new Date().toISOString()})},"تم حفظ الطالب ✓")}
+function delS(id,m){return m=="stop"?run(()=>sb.from("students").update({active:false}).eq("id",uid(id)),"تم إيقاف الطالب ✓"):run(()=>sb.rpc("admin_delete_student",{p_id:uid(id),p_with_lessons:true}),"تم حذف الطالب وحصصه نهائياً ✓")}
+function addAd(){const n=g("an"),u=g("au").toLowerCase(),p=document.getElementById("ap").value;S.err="";
+ if(!n)return bad("الاسم مطلوب");if(!/^[a-z0-9_-]{3,30}$/.test(u))return bad("اسم المستخدم 3-30 حرفاً: إنجليزي صغير وأرقام و _ و - فقط");if(p.length<8)return bad("كلمة المرور يجب ألا تقل عن 8 أحرف");
+ return run(()=>sb.rpc("admin_create_admin",{p_name:n,p_username:u,p_password:p}),"تمت إضافة المشرف ✓")}
+function rmAd(i,b){if(!b.dataset.a){b.dataset.a=1;b.textContent="اضغط مرة أخرى للتأكيد";return}const a=AD[i];
+ return run(async()=>{const r=await sb.rpc("admin_remove_admin",{p_id:uid(a.id)});if(!r.error&&r.data===true){await out();return{}}return r},"تمت إزالة المشرف ✓")}
+function saveFx(){const v=+document.getElementById("fxv").value;if(!(v>0))return bad("سعر الصرف يجب أن يكون رقماً أكبر من صفر");
+ return run(()=>sb.from("exchange_rates").update({usd_to_egp:v,updated_at:new Date().toISOString(),updated_by:ME.id}).eq("id",1),"تم حفظ سعر الصرف ✓")}
+const P={ov,les,fam,tea,adm,stu,fin,add,mine,stu2};
+function R(){if(!S.u){login();return}$(shell(P[S.p]()));}
+(async function init(){S.month=todayC().slice(0,7);S.f.d=todayC();
+ if(window.APP.configError){$(`<div class="lgn"><div class="cd"><h2>إعدادات ناقصة</h2><p>${window.APP.configError}</p></div></div>`);return}
+ try{const r=await sb.auth.getSession();if(r.data.session){const me=await loadMe(r.data.session.user);if(!me.error){ME=me;S.lk=me.role;return go(me.role)}await sb.auth.signOut()}}catch(e){}
+ login()})();
+</script></body></html>
