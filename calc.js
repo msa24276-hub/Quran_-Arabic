@@ -25,7 +25,7 @@
     return mins / 60;
   };
   var wage = function (l) { return cmOf(l) / 60 * l.r; };   // أجر المعلم (يتبع المدة المحتسبة)
-  var rev = function (l) { return l.st == "p" ? l.m / 60 * l.p : 0; }; // رسوم الطالب: سياستها الحالية لم تتغير (حضور فقط)
+  var rev = function (l) { return cmOf(l) / 60 * l.p; }; // رسوم الطالب = المدة المحتسبة × سعر الطالب (الحضور + الغياب المحتسب)
   // yyyy-mm-dd + days (بالتقويم، بلا مشاكل المنطقة الزمنية)
   var shiftDate = function (d, n) {
     var t = new Date(d + "T12:00:00Z");
